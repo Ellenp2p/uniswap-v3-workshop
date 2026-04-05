@@ -24,7 +24,7 @@ export default function App() {
     e.preventDefault()
   }, [sidebarWidth])
 
-  const handleMouseMove = useCallback((e: MouseEvent) => {
+  const handleMouseMove = useCallback((e: { clientX: number }) => {
     if (!isResizing.current) return
     const delta = e.clientX - startX.current
     const newWidth = Math.max(300, Math.min(700, startWidth.current + delta))

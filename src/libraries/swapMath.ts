@@ -25,9 +25,9 @@ export function computeSwapStep(
   const exactIn = amountRemaining >= 0n;
 
   let sqrtRatioNextX96: bigint;
-  let amountIn: bigint;
-  let amountOut: bigint;
-  let feeAmount: bigint;
+  let amountIn: bigint = 0n;
+  let amountOut: bigint = 0n;
+  let feeAmount: bigint = 0n;
 
   if (exactIn) {
     const amountRemainingLessFee = mulDivRoundingUp(
