@@ -20,7 +20,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@uniswap/*": ["../src/*"]
+      "@uniswap-v3/core/*": ["../core/src/*"]
     }
   },
   "include": ["src"]

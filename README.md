@@ -31,11 +31,11 @@
 git clone https://github.com/ellenp2p/uniswap-v3-workshop.git
 cd uniswap-v3-workshop
 
-# 安装依赖（根目录 + 前端）
+# 安装依赖（根目录 workspace）
 bun install
 
-# 启动开发服务器
-bun run --cwd frontend dev
+# 启动开发服务器 (frontend)
+cd packages/frontend && bun run dev
 ```
 
 浏览器打开 `http://localhost:5173` 即可访问。
@@ -153,7 +153,7 @@ import {
   TICK_SPACING,
   getSqrtRatioAtTick,
   getTickAtSqrtRatio,
-} from './src/index.js';
+} from 'packages/core/src/index.js';
 
 // 创建池子
 const sqrtPriceX96 = getSqrtRatioAtTick(0); // tick 0

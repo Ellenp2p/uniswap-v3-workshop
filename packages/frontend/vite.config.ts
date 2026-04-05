@@ -7,9 +7,10 @@ export default defineConfig(({ command }) => ({
   base: command === 'build' ? '/uniswap-v3-workshop/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
-    alias: {
+      alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@uniswap': fileURLToPath(new URL('../src', import.meta.url)),
+      // core package source is at ../core/src relative to this file
+      '@uniswap-v3/core': fileURLToPath(new URL('../core/src', import.meta.url)),
     },
   },
 }))

@@ -1,15 +1,13 @@
 {
   "name": "uniswap-v3-workshop",
   "version": "1.0.0",
+  "private": true,
   "description": "Uniswap V3 core math model in TypeScript - exact match with on-chain contract behavior",
   "type": "module",
-  "main": "src/index.ts",
+  "workspaces": ["packages/*"],
   "scripts": {
     "test": "bun test",
     "test:watch": "bun test --watch",
     "cli": "bun run cli/index.ts"
-  },
-  "dependencies": {
-    "ethers": "^6.16.0"
   }
 }
