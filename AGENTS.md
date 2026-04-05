@@ -1,4 +1,4 @@
-# Uniswap V3 Lab — AI 辅助开发指南
+# Uniswap V3 Workshop — AI 辅助开发指南
 
 > 本文档帮助 AI 助手快速理解项目结构和开发规范。
 

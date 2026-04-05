@@ -1,11 +1,11 @@
-# Uniswap V3 Lab
+# Uniswap V3 Workshop
 
 > 交互式 Uniswap V3 教学模拟器 — 可视化学习集中流动性做市商机制
 
-[![CI](https://github.com/ellenp2p/uniswap-v3-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/ellenp2p/uniswap-v3-lab/actions/workflows/ci.yml)
-[![Deploy](https://github.com/ellenp2p/uniswap-v3-lab/actions/workflows/deploy.yml/badge.svg)](https://github.com/ellenp2p/uniswap-v3-lab/actions/workflows/deploy.yml)
+[![CI](https://github.com/ellenp2p/uniswap-v3-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/ellenp2p/uniswap-v3-workshop/actions/workflows/ci.yml)
+[![Deploy](https://github.com/ellenp2p/uniswap-v3-workshop/actions/workflows/deploy.yml/badge.svg)](https://github.com/ellenp2p/uniswap-v3-workshop/actions/workflows/deploy.yml)
 
-**在线演示**: https://ellenp2p.github.io/uniswap-v3-lab/
+**在线演示**: https://ellenp2p.github.io/uniswap-v3-workshop/
 
 ---
 
@@ -22,14 +22,14 @@
 
 ### 在线使用
 
-直接访问 [在线演示](https://ellenp2p.github.io/uniswap-v3-lab/) 即可使用，无需安装。
+直接访问 [在线演示](https://ellenp2p.github.io/uniswap-v3-workshop/) 即可使用，无需安装。
 
 ### 本地开发
 
 ```bash
 # 克隆仓库
-git clone https://github.com/ellenp2p/uniswap-v3-lab.git
-cd uniswap-v3-lab
+git clone https://github.com/ellenp2p/uniswap-v3-workshop.git
+cd uniswap-v3-workshop
 
 # 安装依赖
 npm install
@@ -46,7 +46,7 @@ npm run dev
 ## 项目结构
 
 ```
-uniswap-v3-lab/
+uniswap-v3-workshop/
 ├── src/                      # 核心库 — Uniswap V3 数学模型
 │   ├── pool/pool.ts          # UniswapV3Pool 主类
 │   ├── libraries/            # 核心算法库

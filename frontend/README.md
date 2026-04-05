@@ -1,4 +1,4 @@
-# Uniswap V3 Lab — 前端
+# Uniswap V3 Workshop — 前端
 
 > React 19 + Vite + Tailwind CSS v4 实现的 Uniswap V3 教学模拟器前端
 

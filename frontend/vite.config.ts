@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/uniswap-v3-lab/' : '/',
+  base: command === 'build' ? '/uniswap-v3-workshop/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

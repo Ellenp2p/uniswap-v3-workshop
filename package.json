@@ -1,5 +1,5 @@
 {
-  "name": "uniswap-v3-lab",
+  "name": "uniswap-v3-workshop",
   "version": "1.0.0",
   "description": "Uniswap V3 core math model in TypeScript - exact match with on-chain contract behavior",
   "type": "module",
