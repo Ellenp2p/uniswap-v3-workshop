@@ -11,25 +11,26 @@
 | Tailwind CSS | 4 |
 | Zustand | 5 |
 | Recharts | 3 |
-| TypeScript | 5.9 |
+| TypeScript | 5 |
+| 包管理器 | Bun |
 
 ## 快速开始
 
 ```bash
 # 安装依赖
-npm install
+bun install
 
 # 启动开发服务器
-npm run dev
+bun run dev
 
 # 类型检查
-npm run typecheck
+bun run typecheck
 
 # 构建生产版本
-npm run build
+bun run build
 
 # 预览构建结果
-npm run preview
+bun run preview
 ```
 
 ## 项目结构
@@ -98,13 +99,13 @@ const { pool, meta, history, currentStep, poolCount } = useActivePool();
 
 ```bash
 # 开发
-npm run dev
+bun run dev
 
 # 类型检查
-npm run typecheck
+bun run typecheck
 
 # 生产构建（base path 自动适配 GitHub Pages）
-npm run build
+bun run build
 ```
 
 构建输出到 `dist/` 目录。

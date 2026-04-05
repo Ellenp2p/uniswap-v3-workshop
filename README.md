@@ -31,14 +31,11 @@
 git clone https://github.com/ellenp2p/uniswap-v3-workshop.git
 cd uniswap-v3-workshop
 
-# 安装依赖
-npm install
-
-# 安装前端依赖
-cd frontend && npm install
+# 安装依赖（根目录 + 前端）
+bun install
 
 # 启动开发服务器
-npm run dev
+bun run --cwd frontend dev
 ```
 
 浏览器打开 `http://localhost:5173` 即可访问。
@@ -138,6 +135,7 @@ uniswap-v3-workshop/
 
 | 层级 | 技术 |
 |------|------|
+| 包管理器 | Bun |
 | 核心库 | TypeScript (ESM) |
 | 前端框架 | React 19 |
 | 构建工具 | Vite 7 |
@@ -185,13 +183,13 @@ const result = pool.swap({
 bun test
 
 # 类型检查
-cd frontend && npm run typecheck
+cd frontend && bun run typecheck
 
 # 构建前端
-cd frontend && npm run build
+cd frontend && bun run build
 
 # 预览构建结果
-cd frontend && npm run preview
+cd frontend && bun run preview
 ```
 
 ## 许可证
