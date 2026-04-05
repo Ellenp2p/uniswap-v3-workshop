@@ -1,15 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import { resolve } from 'path'
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig(({ command }) => ({
   base: command === 'build' ? '/uniswap-v3-workshop/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
-      '@uniswap': resolve(__dirname, '../src'),
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@uniswap': fileURLToPath(new URL('../src', import.meta.url)),
     },
   },
 }))

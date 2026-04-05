@@ -23,5 +23,5 @@
       "@uniswap/*": ["../src/*"]
     }
   },
-  "include": ["src", "vite.config.ts"]
+  "include": ["src"]
 }
