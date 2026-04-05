@@ -1,0 +1,112 @@
+{
+  "USDC_ETH_500": {
+    "poolAddress": "0x88e6A0c2dDD26FEEb64F039a2c41296FcB3f5640",
+    "fee": 500,
+    "tickSpacing": 10,
+    "decimals0": 6,
+    "decimals1": 18,
+    "fetchedAt": "2026-04-04T13:33:59.134Z",
+    "beforeState": {
+      "sqrtPriceX96": "1749148996937264846894763662369444",
+      "tick": 200056,
+      "liquidity": "13806151088844428497",
+      "feeGrowthGlobal0X128": "4693495363217417371053891874207315",
+      "feeGrowthGlobal1X128": "1988194586153650129575130926249421955316719"
+    },
+    "ticks": {
+      "199980": {
+        "liquidityGross": "500000000000000000",
+        "liquidityNet": "500000000000000000",
+        "feeGrowthOutside0X128": "0",
+        "feeGrowthOutside1X128": "0"
+      },
+      "200040": {
+        "liquidityGross": "2000000000000000000",
+        "liquidityNet": "2000000000000000000",
+        "feeGrowthOutside0X128": "0",
+        "feeGrowthOutside1X128": "0"
+      },
+      "200100": {
+        "liquidityGross": "2000000000000000000",
+        "liquidityNet": "-2000000000000000000",
+        "feeGrowthOutside0X128": "0",
+        "feeGrowthOutside1X128": "0"
+      },
+      "200160": {
+        "liquidityGross": "1000000000000000000",
+        "liquidityNet": "-1000000000000000000",
+        "feeGrowthOutside0X128": "0",
+        "feeGrowthOutside1X128": "0"
+      }
+    },
+    "swaps": [
+      {
+        "blockNumber": 24805170,
+        "amount0": "1000000000",
+        "amount1": "-1748000000000000000",
+        "sqrtPriceX96": "1749134612163857189987123438935086",
+        "liquidity": "13806151088844428497",
+        "tick": 200056
+      },
+      {
+        "blockNumber": 24805171,
+        "amount0": "500000000",
+        "amount1": "-874000000000000000",
+        "sqrtPriceX96": "1749120227390449533080483215500728",
+        "liquidity": "13806151088844428497",
+        "tick": 200055
+      }
+    ]
+  },
+  "WBTC_ETH_3000": {
+    "poolAddress": "0xCBCdF9626bC03E24f779434178A73a0B4bad62eD",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "decimals0": 8,
+    "decimals1": 18,
+    "fetchedAt": "2026-04-04T13:33:59.134Z",
+    "beforeState": {
+      "sqrtPriceX96": "45184556482087980843469245561030032",
+      "tick": 265091,
+      "liquidity": "57177832705910689",
+      "feeGrowthGlobal0X128": "68200039232143468078405764363843",
+      "feeGrowthGlobal1X128": "15176868238725590414333382322922352465079708"
+    },
+    "ticks": {
+      "265020": {
+        "liquidityGross": "1000000000000000000",
+        "liquidityNet": "1000000000000000000",
+        "feeGrowthOutside0X128": "0",
+        "feeGrowthOutside1X128": "0"
+      },
+      "265080": {
+        "liquidityGross": "50000000000000000",
+        "liquidityNet": "50000000000000000",
+        "feeGrowthOutside0X128": "0",
+        "feeGrowthOutside1X128": "0"
+      },
+      "265140": {
+        "liquidityGross": "50000000000000000",
+        "liquidityNet": "-50000000000000000",
+        "feeGrowthOutside0X128": "0",
+        "feeGrowthOutside1X128": "0"
+      },
+      "265200": {
+        "liquidityGross": "1000000000000000000",
+        "liquidityNet": "-1000000000000000000",
+        "feeGrowthOutside0X128": "0",
+        "feeGrowthOutside1X128": "0"
+      }
+    },
+    "swaps": [
+      {
+        "blockNumber": 24805170,
+        "amount0": "10000000",
+        "amount1": "-200000000000000000",
+        "sqrtPriceX96": "45182442975297865110771188674482205",
+        "liquidity": "57177832705910689",
+        "tick": 265090
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "swapExactInput0For1": {
+    "description": "Swap exact input token0 for token1, single tick range",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "sqrtPriceX96": "79228162514264337593543950336",
+      "tick": 0,
+      "liquidity": "0"
+    },
+    "mint": {
+      "tickLower": -120,
+      "tickUpper": 120,
+      "amount": "1000000000000000000"
+    },
+    "swap": {
+      "zeroForOne": true,
+      "amountSpecified": "10000000000000000",
+      "sqrtPriceLimitX96": "0"
+    },
+    "expected": {}
+  },
+  "swapExactInput1For0": {
+    "description": "Swap exact input token1 for token0, single tick range",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "sqrtPriceX96": "79228162514264337593543950336",
+      "tick": 0,
+      "liquidity": "0"
+    },
+    "mint": {
+      "tickLower": -120,
+      "tickUpper": 120,
+      "amount": "1000000000000000000"
+    },
+    "swap": {
+      "zeroForOne": false,
+      "amountSpecified": "10000000000000000",
+      "sqrtPriceLimitX96": "0"
+    }
+  },
+  "swapCrossTick": {
+    "description": "Swap that crosses an initialized tick boundary",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "sqrtPriceX96": "79228162514264337593543950336",
+      "tick": 0,
+      "liquidity": "0"
+    },
+    "mint": [
+      {
+        "tickLower": -120,
+        "tickUpper": 120,
+        "amount": "1000000000000000000"
+      },
+      {
+        "tickLower": -240,
+        "tickUpper": 0,
+        "amount": "500000000000000000"
+      }
+    ],
+    "swap": {
+      "zeroForOne": true,
+      "amountSpecified": "50000000000000000",
+      "sqrtPriceLimitX96": "0"
+    }
+  },
+  "swapExactOutput": {
+    "description": "Swap exact output - specify exact amount of token1 to receive",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "sqrtPriceX96": "79228162514264337593543950336",
+      "tick": 0,
+      "liquidity": "0"
+    },
+    "mint": {
+      "tickLower": -120,
+      "tickUpper": 120,
+      "amount": "1000000000000000000"
+    },
+    "swap": {
+      "zeroForOne": true,
+      "amountSpecified": "-5000000000000000",
+      "sqrtPriceLimitX96": "0"
+    }
+  }
+}

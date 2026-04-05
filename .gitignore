@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime
+*.log
+*.json.bak
+.pool-state.json
+
+# Scripts (unrelated)
+Get-1080p-Magnets.ps1
+test.ts
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
