@@ -10,6 +10,7 @@
     "verbatimModuleSyntax": false,
     "moduleDetection": "force",
     "noEmit": true,
+    "isolatedModules": true,
     "jsx": "react-jsx",
     "strict": true,
     "noUnusedLocals": false,
@@ -22,5 +23,5 @@
       "@uniswap/*": ["../src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "vite.config.ts"]
 }

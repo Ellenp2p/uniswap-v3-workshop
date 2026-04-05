@@ -21,7 +21,7 @@ jobs:
 
       - name: Type check
         working-directory: frontend
-        run: bun run tsc -b --noEmit
+        run: bun run typecheck
 
   build:
     name: Build
@@ -35,13 +35,9 @@ jobs:
         working-directory: frontend
         run: bun install --frozen-lockfile
 
-      - name: Type check
-        working-directory: frontend
-        run: bun run tsc -b
-
       - name: Build frontend
         working-directory: frontend
-        run: bun run vite build
+        run: bun run build
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3

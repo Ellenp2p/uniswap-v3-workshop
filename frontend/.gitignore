@@ -2,6 +2,3 @@ node_modules/
 dist/
 *.local
 *.tsbuildinfo
-*.d.ts
-*.js
-!vite.config.ts
