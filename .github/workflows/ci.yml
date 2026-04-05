@@ -18,8 +18,8 @@ jobs:
       - name: Install dependencies (root)
         run: bun install --frozen-lockfile
 
-      - name: Type check
-        run: bun -w x tsc --noEmit
+      - name: Type check (frontend)
+        run: cd packages/frontend && bun run typecheck
 
   build:
     name: Build
@@ -33,7 +33,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Build frontend
-        run: bun workspace run uniswap-v3-workshop-frontend build
+        run: cd packages/frontend && bun run build
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
