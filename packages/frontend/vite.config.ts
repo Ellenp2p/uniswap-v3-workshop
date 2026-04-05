@@ -9,7 +9,8 @@ export default defineConfig(({ command }) => ({
   resolve: {
       alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@uniswap-v3/core': fileURLToPath(new URL('../src', import.meta.url)),
+      // core lives at repository root `src/` so resolve two levels up from packages/frontend
+      '@uniswap-v3/core': fileURLToPath(new URL('../../src', import.meta.url)),
     },
   },
 }))

@@ -13,7 +13,8 @@
     "react": "^19",
     "react-dom": "^19",
     "zustand": "^5",
-    "recharts": "^3"
+    "recharts": "^3",
+    "@uniswap-v3/core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22",
