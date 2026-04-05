@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useStore, useActivePool } from '@/store/poolStore'
-import { FeeTier } from '@uniswap/index.js'
+import { FeeTier } from '@uniswap-v3/core/index.js'
 
 export default function PoolList() {
   const pools = useStore(s => s.poolMeta)

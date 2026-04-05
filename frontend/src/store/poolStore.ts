@@ -1,6 +1,6 @@
 import { create } from 'zustand';
-import { UniswapV3Pool } from '@uniswap/pool/pool.js';
-import { getSqrtRatioAtTick, FeeTier, TICK_SPACING } from '@uniswap/index.js';
+import { UniswapV3Pool } from '@uniswap-v3/core/pool/pool.js';
+import { getSqrtRatioAtTick, FeeTier, TICK_SPACING } from '@uniswap-v3/core/index.js';
 import { formatBigInt } from '@/utils/formatters';
 
 const ERROR_MESSAGES: Record<string, string> = {

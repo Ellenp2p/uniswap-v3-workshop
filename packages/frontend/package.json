@@ -1,0 +1,29 @@
+{
+  "name": "uniswap-v3-workshop-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19",
+    "react-dom": "^19",
+    "zustand": "^5",
+    "recharts": "^3",
+    "@uniswap-v3/core": "workspace:1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^5",
+    "tailwindcss": "^4",
+    "@tailwindcss/vite": "^4",
+    "typescript": "^5",
+    "vite": "^7"
+  }
+}

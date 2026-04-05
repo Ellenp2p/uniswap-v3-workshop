@@ -6,8 +6,8 @@
 
 这是一个 Uniswap V3 教学模拟器，包含两个部分：
 
-1. **核心库** (`src/`) — 纯 TypeScript 实现的 Uniswap V3 数学模型，精确复现链上行为
-2. **前端** (`frontend/`) — React 19 + Vite + Tailwind CSS v4 的交互式教学界面
+1. **核心库** (`packages/core/src/`) — 纯 TypeScript 实现的 Uniswap V3 数学模型，精确复现链上行为
+2. **前端** (`packages/frontend/`) — React 19 + Vite + Tailwind CSS v4 的交互式教学界面
 
 ## 快速理解项目
 
@@ -29,13 +29,13 @@ Token1 ──────┘
 
 | 文件 | 作用 | AI 需要知道的 |
 |------|------|---------------|
-| `src/pool/pool.ts` | 核心池类，实现所有 V3 逻辑 | 所有数学运算使用定点数，模拟 Solidity 行为 |
+| `packages/core/src/pool/pool.ts` | 核心池类，实现所有 V3 逻辑 | 所有数学运算使用定点数，模拟 Solidity 行为 |
 | `src/libraries/tickMath.ts` | Tick ↔ Price 转换 | `P = 1.0001^tick` |
 | `src/libraries/sqrtPriceMath.ts` | 价格相关计算 | 使用 Q64.96 定点数 |
 | `src/libraries/liquidityMath.ts` | 流动性计算 | `L = √(x × y)` |
 | `src/libraries/swapMath.ts` | 交换计算 | 处理跨 Tick 交换 |
-| `frontend/src/store/poolStore.ts` | 全局状态管理 | Zustand store，多池子支持 |
-| `frontend/src/components/ActionPanel.tsx` | 操作表单 | 所有用户操作的入口 |
+| `packages/frontend/src/store/poolStore.ts` | 全局状态管理 | Zustand store，多池子支持 |
+| `packages/frontend/src/components/ActionPanel.tsx` | 操作表单 | 所有用户操作的入口 |
 
 ### 数据流
 
@@ -113,13 +113,16 @@ bun test tests/pool.test.ts
 ## 构建和部署
 
 ```bash
+# 安装（根目录 workspace）
+bun install
+
 # 类型检查
-cd frontend && npm run typecheck
+cd packages/frontend && bun run typecheck
 
 # 构建
-cd frontend && npm run build
+cd packages/frontend && bun run build
 
-# 输出到 frontend/dist/
+# 输出到 packages/frontend/dist/
 ```
 
 GitHub Actions 自动构建并部署到 GitHub Pages。

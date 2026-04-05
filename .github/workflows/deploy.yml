@@ -22,18 +22,16 @@ jobs:
 
       - uses: oven-sh/setup-bun@v2
 
-      - name: Install dependencies
-        working-directory: frontend
+      - name: Install dependencies (root)
         run: bun install --frozen-lockfile
 
       - name: Build
-        working-directory: frontend
-        run: bun run build
+        run: bun workspace run uniswap-v3-workshop-frontend build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/dist
+          path: packages/frontend/dist
 
   deploy:
     environment:
